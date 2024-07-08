@@ -17,6 +17,6 @@ jobs:
       - name: Run tests and collect coverage
         run: mvn prepare-package
       - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v4.0.1
+        uses: codecov/codecov-action@v4.5.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
