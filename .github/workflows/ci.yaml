@@ -1,7 +1,7 @@
-name: Workflow for secrets.CODECOV_TOKEN
+name: Workflow upload report to Codecov
 on: [push, pull_request]
 jobs:
-  run:
+  upload-coverage:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
