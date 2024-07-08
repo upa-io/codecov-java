@@ -1,5 +1,13 @@
 name: Workflow upload report to Codecov
-on: [push, pull_request]
+on: 
+  push:
+    paths:
+      - 'src/**'
+      - 'pom.xml'
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'pom.xml'
 jobs:
   upload-coverage:
     runs-on: ubuntu-latest
