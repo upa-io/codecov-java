@@ -1,3 +1,5 @@
+permissions:
+  contents: read
 name: Workflow upload report to Codecov
 on: 
   push:
